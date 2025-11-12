@@ -9,7 +9,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 echo "Cloning the repository..."
-                git 'https://github.com/<your-github-username>/<repo-name>.git'
+                git 'https://github.com/AdityaSingh0472/devops-static-website.git'
             }
         }
 
