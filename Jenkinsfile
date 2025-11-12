@@ -8,10 +8,10 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                echo "Cloning the repository..."
-                git 'https://github.com/AdityaSingh0472/devops-static-website.git'
-            }
-        }
+                echo "Cloning the repository (main branch)..."
+                git branch: 'main', url: 'https://github.com/AdityaSingh0472/devops-static-website.git'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
