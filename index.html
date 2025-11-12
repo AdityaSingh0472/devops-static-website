@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DevOps Demo — Static Website</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">DevOps Demo</h1>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#features">Features</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <h2>Simple Static Website</h2>
+        <p>A beginner-friendly web app to use in your Jenkins + Docker CI/CD project.</p>
+        <a class="btn" href="#features">Get started</a>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h3>What this project demonstrates</h3>
+        <ul class="features-list">
+          <li>Host code in GitHub</li>
+          <li>Trigger CI with GitHub webhooks</li>
+          <li>Build and run a Docker image with Jenkins</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section small">
+      <div class="container">
+        <h3>Contact</h3>
+        <p>Author: <strong>Your Name</strong></p>
+        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> DevOps Demo • Built for CI/CD practice</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script to set the copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
