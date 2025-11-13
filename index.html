@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DevOps Demo — Static Website</title>
+  <title>Aditya Singh — DevOps Static Website</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <h1 class="logo">DevOps Demo</h1>
+      <h1 class="logo">Aditya Singh</h1>
       <nav class="nav">
         <a href="#home">Home</a>
-        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#project">Project</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -21,19 +22,29 @@
   <main>
     <section id="home" class="hero">
       <div class="container hero-inner">
-        <h2>Simple Static Website</h2>
-        <p>A beginner-friendly web app to use in your Jenkins + Docker CI/CD project.</p>
-        <a class="btn" href="#features">Get started</a>
+        <h2>DevOps Project Demo</h2>
+        <p>This is a small static website built as part of my B.Tech DevOps & Cloud course.  
+        It’s used to demonstrate a complete CI/CD pipeline with <strong>GitHub → Jenkins → Docker</strong>.</p>
+        <a class="btn" href="#project">View Project</a>
       </div>
     </section>
 
-    <section id="features" class="section">
+    <section id="about" class="section">
       <div class="container">
-        <h3>What this project demonstrates</h3>
+        <h3>About Me</h3>
+        <p>Hello! I'm <strong>Aditya Singh</strong>, a B.Tech student in Cloud Technology & Information Security (4th year).  
+        I enjoy building full-stack applications, automating workflows, and exploring DevOps tools.</p>
+      </div>
+    </section>
+
+    <section id="project" class="section">
+      <div class="container">
+        <h3>CI/CD Project Overview</h3>
         <ul class="features-list">
-          <li>Host code in GitHub</li>
-          <li>Trigger CI with GitHub webhooks</li>
-          <li>Build and run a Docker image with Jenkins</li>
+          <li>Code hosted on GitHub</li>
+          <li>Build automation with Jenkins</li>
+          <li>Docker image created & container deployed automatically</li>
+          <li>Website served on <code>localhost:8080</code></li>
         </ul>
       </div>
     </section>
@@ -41,22 +52,20 @@
     <section id="contact" class="section small">
       <div class="container">
         <h3>Contact</h3>
-        <p>Author: <strong>Aditya Singh</strong></p>
-        <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+        <p>Email: <a href="mailto:adityasingh.devops@gmail.com">adityasingh.devops@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/AdityaSingh0472" target="_blank">AdityaSingh0472</a></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> DevOps Demo • Built for CI/CD practice</p>
+      <p>© <span id="year"></span> Aditya Singh • DevOps CI/CD Demo</p>
     </div>
   </footer>
 
   <script>
-    // Small script to set the copyright year
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
-"<!-- test build -->" 

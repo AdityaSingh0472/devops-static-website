@@ -1,18 +1,58 @@
-# DevOps Demo — Static Website
+# DevOps Static Website — CI/CD Pipeline (by Aditya Singh)
 
-Simple static website used as the application for a beginner Jenkins + Docker CI/CD pipeline.
+This project demonstrates a simple Continuous Integration and Continuous Deployment (CI/CD) pipeline using **Jenkins**, **Docker**, and **GitHub**.
 
-## What it contains
-- `index.html` — main page
-- `css/styles.css` — styling
+---
 
-## How to run locally
-1. Open `index.html` in your browser (double-click or right-click → Open with).
-2. Or run a quick HTTP server:
-   - Python 3: `python -m http.server 8000` then open http://localhost:8000
+## 📘 About the Project
 
-## Next steps (for the course)
-- Add a `Dockerfile` to containerize this site.
-- Create a GitHub repo and push the code.
-- Configure Jenkins pipeline to build and deploy a Docker image.
+This is part of my **B.Tech (Cloud Technology and Information Security)** coursework.  
+It’s a simple static website built using HTML and CSS, automated using Jenkins and Docker.
 
+Whenever I push code to GitHub:
+1. Jenkins automatically pulls the latest code.
+2. Jenkins builds a new Docker image.
+3. Jenkins runs a new container hosting the website.
+
+Result → The updated website is available on `http://localhost:8080`.
+
+---
+
+## 🧰 Tools & Technologies
+
+- **Jenkins** – Automation server  
+- **Docker** – Containerization  
+- **GitHub** – Source control  
+- **Nginx** – Web server for static content  
+
+---
+
+## 💡 Features
+
+- Fully automated CI/CD pipeline  
+- Simple, clean static website  
+- Personalized design & content  
+- Works on any local or cloud environment  
+
+---
+
+## 📸 Output Preview
+
+- Jenkins console shows:  
+  ✅ Build and deployment successful!  
+- Docker container runs:  
+  `devops-static-site` on port 8080  
+- Website accessible at:  
+  `http://localhost:8080`
+
+---
+
+## 👨‍💻 Author
+
+**Aditya Singh**  
+Email: [adityasingh.devops@gmail.com](mailto:adityasingh.devops@gmail.com)  
+GitHub: [AdityaSingh0472](https://github.com/AdityaSingh0472)
+
+---
+
+⭐ *Created as part of my DevOps course project to demonstrate practical CI/CD automation.*

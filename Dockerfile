@@ -1,11 +1,14 @@
-# Use official Nginx image from Docker Hub
+# Use a lightweight nginx base image
 FROM nginx:alpine
 
-# Copy website files into Nginx's default public directory
+# Author information
+LABEL maintainer="Aditya Singh <adityasingh.devops@gmail.com>"
+
+# Copy project files to nginx default directory
 COPY . /usr/share/nginx/html
 
-# Expose port 80 (default HTTP)
+# Expose port 80 for web traffic
 EXPOSE 80
 
-# Start Nginx (this is already the default CMD)
+# Default command to start nginx
 CMD ["nginx", "-g", "daemon off;"]
